@@ -1,0 +1,30 @@
+--2018-03-07 14:19:45--  http://www2.xitek.com/forum/upload/728/72873/72873_1102166224.jpg
+Resolving www2.xitek.com... 58.211.18.168
+Connecting to www2.xitek.com|58.211.18.168|:80... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: http://forum.xitek.com/upload/728/72873/72873_1102166224.jpg [following]
+--2018-03-07 14:19:45--  http://forum.xitek.com/upload/728/72873/72873_1102166224.jpg
+Resolving forum.xitek.com... 58.211.18.163
+Connecting to forum.xitek.com|58.211.18.163|:80... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: http://www7.xitek.com/forum/upload/728/72873/72873_1102166224.jpg [following]
+--2018-03-07 14:19:45--  http://www7.xitek.com/forum/upload/728/72873/72873_1102166224.jpg
+Resolving www7.xitek.com... 58.211.18.164
+Connecting to www7.xitek.com|58.211.18.164|:80... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: http://i6.xitek.com/forum/upload/728/72873/72873_1102166224.jpg [following]
+--2018-03-07 14:19:45--  http://i6.xitek.com/forum/upload/728/72873/72873_1102166224.jpg
+Resolving i6.xitek.com... 58.211.18.162
+Connecting to i6.xitek.com|58.211.18.162|:80... failed: Operation timed out.
+Retrying.
+
+--2018-03-07 14:19:46--  (try: 2)  http://i6.xitek.com/forum/upload/728/72873/72873_1102166224.jpg
+Connecting to i6.xitek.com|58.211.18.162|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 23114 (23K) [image/jpeg]
+Saving to: '72873_1102166224.jpg.1'
+
+     0K .......... .......... ..                              100%  146K=0.2s
+
+2018-03-07 14:19:47 (146 KB/s) - '72873_1102166224.jpg.1' saved [23114/23114]
+

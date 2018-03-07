@@ -1,0 +1,26 @@
+--2018-03-07 14:19:43--  http://www2.xitek.com/forum/upload/728/72873/72873_1102164683.jpg
+Resolving www2.xitek.com... 58.211.18.168
+Connecting to www2.xitek.com|58.211.18.168|:80... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: http://forum.xitek.com/upload/728/72873/72873_1102164683.jpg [following]
+--2018-03-07 14:19:43--  http://forum.xitek.com/upload/728/72873/72873_1102164683.jpg
+Resolving forum.xitek.com... 58.211.18.163
+Connecting to forum.xitek.com|58.211.18.163|:80... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: http://www7.xitek.com/forum/upload/728/72873/72873_1102164683.jpg [following]
+--2018-03-07 14:19:43--  http://www7.xitek.com/forum/upload/728/72873/72873_1102164683.jpg
+Resolving www7.xitek.com... 58.211.18.164
+Connecting to www7.xitek.com|58.211.18.164|:80... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: http://i6.xitek.com/forum/upload/728/72873/72873_1102164683.jpg [following]
+--2018-03-07 14:19:43--  http://i6.xitek.com/forum/upload/728/72873/72873_1102164683.jpg
+Resolving i6.xitek.com... 58.211.18.162
+Connecting to i6.xitek.com|58.211.18.162|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 8832 (8.6K) [image/jpeg]
+Saving to: '72873_1102164683.jpg.1'
+
+     0K ........                                              100% 45.5M=0s
+
+2018-03-07 14:19:44 (45.5 MB/s) - '72873_1102164683.jpg.1' saved [8832/8832]
+
