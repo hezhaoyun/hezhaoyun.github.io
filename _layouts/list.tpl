@@ -1,6 +1,5 @@
 ---
 layout: page
-
 class: page-type-list
 ---
 
