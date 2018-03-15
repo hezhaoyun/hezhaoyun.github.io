@@ -8,11 +8,12 @@ CONFIG = {
   'post_ext' => "md",
 }
 
-# Usage: rake post title="A Title"
+# Usage: rake post title="A Title" [category="story"]
 desc "Begin a new post in #{CONFIG['posts']}"
 task :post do
   abort("rake aborted: '#{CONFIG['posts']}' directory not found.") unless FileTest.directory?(CONFIG['posts'])
   title = ENV["title"] || "new-post"
+  category = ENV["category"] || "story"
   slug = title.downcase.strip.gsub(' ', '-') # .gsub(/[^\w-]/, '')
   filename = File.join(CONFIG['posts'], "#{Time.now.strftime('%Y-%m-%d')}-#{slug}.#{CONFIG['post_ext']}")
   if File.exist?(filename)
@@ -24,7 +25,7 @@ task :post do
     post.puts "---"
     post.puts "layout: post"
     post.puts "title: \"#{title.gsub(/-/,' ')}\""
-    post.puts "category: story"
+    post.puts "category: #{category}"
     post.puts "date: #{Time.new}"
     post.puts "---"
   end
