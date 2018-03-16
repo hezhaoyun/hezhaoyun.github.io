@@ -29,7 +29,7 @@ meta:
     author:
         name: 贺照云
         email: hezhaoyun@outlook.com
-        disqus: zhaoyun                             # Disqus缩略标识
+        disqus: hezhaoyun                           # Disqus缩略标识
         gcse: 000346898720731947188:13h55x32l0y     # Google自定义搜索标识ID
         github: hezhaoyun                           # GitHub账号
         gravatar: 889c164a955cbfb495ab575626f85e56  # Gravatar头像标识
