@@ -9,10 +9,10 @@ desc: 往美得想，往好得做！
 
 custom:
     category:
-        tech: 技术
-        design: 设计
-        story: 故事
         pm: 产品
+        design: 设计
+        tech: 技术
+        story: 故事
     categories:
       - name:  pm
         title: 产品
