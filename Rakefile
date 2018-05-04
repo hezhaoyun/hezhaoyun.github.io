@@ -27,6 +27,12 @@ task :post do
     post.puts "title: \"#{title.gsub(/-/,' ')}\""
     post.puts "category: #{category}"
     post.puts "date: #{Time.new}"
+    post.puts "typora-copy-images-to: ../assets"
     post.puts "---"
   end
+
+  # Open .md file use register app installed.
+  
+  sh "open #{filename}"
+
 end # task :post
