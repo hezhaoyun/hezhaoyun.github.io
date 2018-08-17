@@ -34,6 +34,6 @@ meta:
         github: hezhaoyun                           # GitHub账号
         gravatar: 889c164a955cbfb495ab575626f85e56  # Gravatar头像标识
 
-    disqus: disqus.com/embed.js                     # Disqus评论的JS地址
+    disqus: https://hezhaoyun-github-io.disqus.com/embed.js                     # Disqus评论的JS地址
     gapi: http://www.google.com/jsapi               # Google API地址
     gravatar: http://en.gravatar.com/avatar/        # Gravatar头像服务器地址
