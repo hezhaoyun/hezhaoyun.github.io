@@ -82,7 +82,6 @@
 {% endfor %}
 <script>
 site.URL_GOOGLE_API = '{{site.meta.gapi}}';
-site.URL_DISCUS_COMMENT = '{{ site.meta.disqus }}';
 
 site.VAR_SITE_NAME = "{{ site.name | replace:'"','\"' }}";
 site.VAR_GOOGLE_CUSTOM_SEARCH_ID = '{{ site.meta.author.gcse }}';
