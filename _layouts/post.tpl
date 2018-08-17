@@ -16,8 +16,8 @@ class: page-type-post
 <div id="disqus_thread" class="comments"></div>
 <script>
 	var disqus_config = function () {
-		this.page.url = '{{ page.url }}';
-		this.page.identifier = '{{ page.url }}';
+		this.page.url = 'http://{{ site.host }}{{ page.url }}';
+		this.page.identifier = 'http://{{ site.host }}{{ page.url }}';
 	};
 	(function () { // DON'T EDIT BELOW THIS LINE
 		var d = document, s = d.createElement('script');
