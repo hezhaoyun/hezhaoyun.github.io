@@ -1,104 +1,40 @@
-Jekyll主题: SimpleGray
-======
+# 1. 为什么会有这一系列文档
 
-这是一个由[造轮子工程师][]设计的jekyll站点主题，中文名称：**极简灰**。
+## 「棋路」情缘
 
-利用这个模板可以帮助你在GitHub上快速的搭建一个极简风格的博客站点。
+大家好，我是「棋路-中国象棋」软件的开发者贺照云。
 
-![SimpleGray](http://mbed.qiniudn.com/yanjunyi.com/img/works/SimpleGray.jpg)
+我喜欢中国象棋，一直希望在象棋传统文件的传承中做点什么。
 
-## 如何使用 ##
+早在 2007 年 Android 刚刚提供开发者工具的时候，我实现了一份 Java 版的「棋路」游戏。5 年后的 2012 年，我在 AppStore 上提交了基于 Cocos2d 的 iOS 版的「棋路」游戏。多年来棋路的用户累计超过了100万人。
 
-### 开始之前 ###
+![https://www.apppk.cn/apps/chessroad.html](.gitbook/assets/1024x500.png)
 
-首先请确保你已经了解[GitHub Pages](http://pages.github.com/)和[jekyll](github.com/mojombo/jekyll)是如何使用的（推荐阅读：[Publishing a Blog with GitHub Pages and Jekyll](http://blog.envylabs.com/2009/08/publishing-a-blog-with-github-pages-and-jekyll/)和[Jekyll-Bootstrap](http://jekyllbootstrap.com/)，扩展了解：[Octopress](http://octopress.org/)）。
+「棋路」游戏一直有自己的风格——了解棋友的需要、注重体验！因此「棋路」积累了不少象棋爱好者，但因为工作关系，多年未更新棋路 App，许多棋友陆续对「新棋路」提出了建议和希望。
 
-### 获得源代码 ###
+当我动了重新实现「新棋路」的心思后，一直在考虑用跨平台方式，实现在 Android 和 iOS 平台同步发布「新棋路」。
 
-直接clone这个仓库到本地：
+经过了一段时间的考量，我决定用 Flutter 这种 Google 推荐的全新语言来高效、跨平台地解决「新棋路」的开发需求。
 
-	$ git clone --recursive git://github.com/mytharcher/SimpleGray.git your-repo-name
+这仅是回馈，为了信任和关注棋路的朋友！
 
-**注意！**
+## 初心
 
-除非你想改进这个主题，否则请不要fork此项目作为你博客的起点，因为fork后你的所有提交和推送都会在整个network图中显示出来。
+ Flutter 出来不久，我开始了解和学习过一段时间的 Flutter，对其开发和运行效率是有信心的。所担心的是中国象棋游戏是一个复杂的项目，其中有不少界面外的需求，例如与原生 C/C++ 代码的融合、原生引擎对多进程/多线程的协作的实现、棋谱文件格式解析、音效等等。
 
-所以更推荐你使用clone的方式创建自己的站点，以免给所有使用此主题的人造成干扰。
+这个过程应该有不少坑要趟~
 
-### 修改站点信息 ###
+但回头一想，Flutter 现在所处的阶段需要多一些的探路者！我这一段趟塘坑经历，可能对 Flutter 推广、对 Flutter 或棋软的开发者有用！于是我就坚定了用 Flutter、并同步推出一系列 Flutter 中国象棋开发文章的意志。
 
-要将这个主题修改为自己的站点，有更多的工作要做。一部分变量可以直接在`_config.yml`里配置。这里列了一个清单，可以按此步骤进行修改。
+为了帮助开发者了解象棋软件开发的基本知识，也为了给 Flutter 的初学者一份详实的教程，我打算把这个开发过程以「图文实录」的方式记录下来。
 
-0.	**站点名称**
-	
-	修改`_config.yml`文件中的变量：`name`为站点名称，`host`为站点域名。
+诚然，作为 Flutter 教程来说，市面上已经有很多的 Flutter 教程了。但我将以「一步一步」、「实录」的方式来向你展示 Flutter 在真实项目中的应用。
 
-0.	**博客的分类**
-	
-	作者在jekyll的使用过程中一直未找到方便管理分类列表的方式，所以在这个主题里使用了两组变量和文件夹配置来管理博客文章的分类。鉴于一般分类不会太多，暂时使用手动处理也不会太麻烦。
+软件开发终究是讲究「手底下见正章」的，正是「行胜于言」！
 
-	首先修改`_config.yml`文件中的`custom.category`（Map）和`custom.categories`（List）两组变量，务必互相对应。
+让我们远离教条，简单明快地在实践中提升开发技能！
 
-	然后参照`category/default`目录对应之前的变量设置更多分类索引文件夹，并修改其中的`index.html`，用对应分类的变量名替换之前的。
+## 承诺
 
-	完成之后就可以在文章中使用你自己定义的分类了。
-
-0.	**作者信息**
-	
-	你应该看到`_config.yml`中有一部分`meta`变量的内容都是作者相关的信息，恩，就是这了，修改里面`author`信息块就可以了。
-
-	其中[Gravatar][]头像标识需要使用你自己的gravatar注册的邮箱MD5值替换，就可以在页面上显示自己的头像了。
-
-	PS: 页面右侧作者信息块中有个隐藏的作者邮件地址，为了防止被爬虫抓取，我把邮件地址写在了`assets/css/site.css`里，打开看看，你能找到！
-
-0.	**[Disqus][]云评论代码**
-	
-	`_config.yml`的`author`配置部分也有`disqus`一项，配置为你创建的站点短名称标识串即可。之后每一篇日志后就会显示评论列表了，但这个功能只有在真实线上域名的时候才会生效。
-
-0.	**站内搜索**
-
-	如果你需要站内搜索功能，那么最好的办法就是申请[Google Custom Search][](CSE)服务。
-
-	主题中已经配置了作者站点的站内搜索为默认引擎，具体设置也在`_config.yml`中的`author`部分，`gcse`字段。将其中引擎用户ID字符串改为你自己的即可。
-
-0.	安装[Google Analytics][]或其他站点统计代码
-	
-	主题作者对访问量不是很敏感，所以没有安装统计代码。如果需要安装，可以在`_layout/page.tpl`文件中加入统计代码，之后每个生成的页面就都可以被统计到了。
-
-0.	**修改CNAME**
-
-	按照jekyll官方的说明，使用你自己的域名替换`CNAME`文件中的内容，如果有多个别名，每行一个。
-
-### 基于Reveal.js的PPT模板 ###
-
-SimpleGray默认引入了[Reveal.js](http://lab.hakim.se/reveal-js/)作为演示页面的展示引擎。在任意一篇博客中把`layout`变量设置为`presentation`（即使用演示模板）就可以将文章页转化为一个PPT浏览。具体语法请参照Reveal.js主页中的说明。
-
-### JavaScript相关扩展功能 ###
-
-这个主题使用了作者[造轮子工程师][]开发的[elf+js][]，这是一个和jQuery一样简单的JS基础库，详细的请点击链接进入官网了解。
-
-全站相关的JS都在`assets/js/site.js`一个文件里，不大，提供了几个功能：
-
-*	代码高亮初始化
-	
-*	Disqus评论初始化
-	
-*	站内搜索初始化
-	
-*	滚动页面时自动延迟加载对应在显示区域内的文章
-	
-	在`_config.yml`的`custom`中新增一个配置项`scrollingLoadCount`，用于配置滚屏时自动加载的文章数量，“0”为不在滚屏时加载。
-
-其他自己摸索吧，代码就那么点，都很简单的，哥实在懒得写了。
-
-## 基于此主题的站点
-
-如果你也使用了这个主题，可以项目[wiki](https://github.com/mytharcher/SimpleGray/wiki)里添加你的站点链接。
-
-[Disqus]: http://www.disqus.com/
-[elf+js]: http://elf.js.org/
-[Google Analytics]: http://www.google.com/analytics/
-[Google Custom Search]: http://www.google.com/cse/
-[Gravatar]: http://gravatar.com/
-[造轮子工程师]: https://github.com/mytharcher
+只要一步一步地跟随文档，你一定能作出「棋路」中国象棋，并超越它！
 
